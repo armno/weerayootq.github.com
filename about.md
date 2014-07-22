@@ -2,7 +2,7 @@
 layout: page
 permalink: /about/
 title: About Q
-tags: [Jekyll, theme, simple, minimal, minimalism, responsive]
+tags: [WeerayootQ, Weerayoot, Q, Weerayoot Ngandee]
 modified: 2014-07-22
 image:
   feature: so-simple-sample-image-6.JPG
