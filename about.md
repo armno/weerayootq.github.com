@@ -1,16 +1,16 @@
 ---
 layout: page
 permalink: /about/
-title: About the Jekyll Theme
+title: About Q
 tags: [Jekyll, theme, simple, minimal, minimalism, responsive]
-modified: 2013-09-13
+modified: 2014-07-22
 image:
-  feature: so-simple-sample-image-4.jpg
-  credit: Michael Rose
-  creditlink: http://mademistakes.com
+  feature: so-simple-sample-image-6.JPG
+  credit: Weerayoot Ngandee
 ---
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the followup to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes) --- by designer slash illustrator [Michael Rose](http://mademistakes).
+Q is an indie software developer currently focusing on iOS development and Android development and the administrator of this site. He is passionate about making apps and teaching others the techniques to make them. When Q’s not programming he’s probably cycling around Chiang Mai. He was born in Chiang Rai, the northest of Thailand. Now, he working with [BUZZWOO!](http://www.buzzwoo.de/) as a Mobile Developer and been woring here almost 3 years. He was graduated from Computer Science, Chiang Mai University. He always open to help you solve you business problem by his knowlegde in the field of technology. Feel free to getting in touch to [here](mailto:weerayoot.ngandee@gmail.com)
+<!-- Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the followup to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes) --- by designer slash illustrator [Michael Rose](http://mademistakes). -->
 
 ## So Simple Theme is all about:
 
