@@ -125,6 +125,78 @@ Creating Hello Android
 
 ![Alt text](../images/android_part1_10.jpg) 
 
+***
+
+Running on an Emulator or Device
+---------------------
+
+หลังจากที่เราได้ใช้เวลา(อันยาวนาน)ในการสร้าง Android Project ขึ้นมา ถึงเวลาแล้วที่เราจะนำเอาแอพพลิเคชันไปแสดงผลยัง Emulator หรือ Device โดยมีรายละเอียดดังต่อไปดังนี้
+
+* เริ่มจากคลิกที **Edit Configurations** ดังรูปต่อไปนี้
+
+![Alt text](../images/android_part1_11.jpg)
+
+* หลังจากนั้นจะมี Dialog ปรากฎขึ้นดังรูปต่อไปนี้
+
+![Alt text](../images/android_part1_12.jpg)
+
+จากรูปข้างต้น เราจะไป Focus ที่ **Target Device** sction โดยส่วนนี้ทำหน้าเป็นตัวคอยบอก Android S3tudio ให้รู้ว่าทุกครั้งที่แอพพลิเคชันของเรา Run จะไปแสดงผลที่ไหน Emulator / Device หลังจากนี้เราจะได้เริ่มทำการตั้งค่าให้กับ Emulator ของเราโดยเลือกไปที่ Option: Emulator แล้วไปคลิกที่ปุ่มถัดจาก "Prefer Android Virtual Device" drop-down หลังจากนั้นจะปรากฎหน้าต่างของ Android Virtual Device (AVD Manager ขึ้นมาดังรูปตามลำดับต่อไปนี้
+
+![Alt text](../images/android_part1_13.jpg)
+![Alt text](../images/android_part1_14.jpg)
+
+ใน ADV เราสามารถ สร้าง/แก้ไข/ลบ Emulator ได้ตามต้องการ ถึงส่วนนี้แล้วเราจะมาสร้าง Emulator โดยคลิกที่ปุ่ม "Create" โดยจะมีหน้าต่างของ option setting ของ Emulator ปรากฎขึ้น ดังรูปต่อไปนี้ตามลำดับ
+
+![Alt text](../images/android_part1_15.jpg)
+![Alt text](../images/android_part1_16.jpg)
+
+###### ใน Part นี้แนะนำให้ใช้การ setup ตามภาพข้างต้น
+
+เมื่อทำการ setup ค่าต่างๆ ของ Emulator เรียบร้อยแล้วจะมี Dialog ปรากฎขึ้นอีกครั้งโดยจะนำเสนอข้อมูลเกี่ยวกับการ Setup ของ Emolator เพื่อ Preview ให้ผู้พัฒนาได้ตรวจสอบอีกครั้ง ดังรูปต่อไปนี้
+
+![Alt text](../images/android_part1_17.jpg)
+
+หลังจากการ Setup เสร็จสอ้น Emulator ที่เราก็จะปรกฎใน List ของ AVD Manager ดังรูปต่อไปนี้
+
+![Alt text](../images/android_part1_18.jpg)
+
+เมื่อเราได้เตรียมและสร้าง Emulator สำหรับแอพพลิเคชันเป็นที่เรียบร้อยแล้ว ให้เราเปิด AVD Manager แล้วกลับมาที่หน้าต่างของ **Edit Configurations** เพื่อไปทำการเลือก Emulator ที่ได้สร้างไว ดังรูปต่อไปนี้
+
+![Alt text](../images/android_part1_19.jpg)
+
+หลังจากนั้นเราก็จะถูกนำกลับมาที่หน้าต่างของ Android Studio อีกครั้ง ถึงเวลามาเทสแอพพลิเคชันของ โดยคลิกที่ปุ่ม Run ที่มีลักษณะคล้ายกับปุ่ม Play ดังรูปต่อไปนี้
+
+![Alt text](../images/android_part1_20.jpg)
+
+###### ในการ Run แอพพลิเคชันกับ Emulator ในครั้งแรกอาจจะใช้ระยะเวลาค่อนข้างยาวนาน
+
+##ในที่สุด!!! แอพพลิเคชันแรกก็ได้มีชีวิตบน Emulator ดังรูปต่อไปนี้
+
+![Alt text](../images/android_part1_21.jpg)
+
+***
+
+Putting your name on the app
+--------------
+ถึงเวลาที่เราจะนำเอาชื่อของเราไปปแสดงผลยังแอพพลิเคชัน โดยเริ่มจากไปที่ **Project Navigation Panel** เลือกไปที่ไฟล์ **strings.xml** ภายใต้ Path : **src/main/res/values/strings.xml** ดังรูปต่อไปนี้
+
+![Alt text](../images/android_part1_22.jpg)
+
+จากนั้นใน Work Space ของ Android Studio จะทำการเปิดไฟล์ strings.xml ขึ้นมาพร้อมให้เราทำการ edit ดังรูป
+
+![Alt text](../images/android_part1_23.jpg)
+
+จากรูปข้างต้นจะเห็นได้ว่ามี XML คีย์หนึ่งที่มีชื่อว่า **hello_world** โดยมีค่าของคีย์คือ **Hello world!** จากส่วนนี้เราสามารถจะแก้ไขค่าของ string นี้ได้ ดังรูปตัวอย่างต่อไปนี้
+
+![Alt text](../images/android_part1_24.jpg)
+
+สุดท้ายทำการ Run แอพพลิเคชันอีกครั้ง แอพพลิเคชันแรกของเราก็จะทำการแสดงผลตามค่าที่เรากำหนดให้
+
+![Alt text](../images/android_part1_25.jpg)
+
+***
+
+
 [download the JDK]:http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [Android Studio Page]:https://developer.android.com/sdk/installing/studio.html
 [Anddroid Dashboard]:https://developer.android.com/about/dashboards/index.html
