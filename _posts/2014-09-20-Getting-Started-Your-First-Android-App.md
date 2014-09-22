@@ -28,7 +28,7 @@ Task
 
  - Download & Install Android Studio
  - Set up testing on devices and emulators.
- - สร้าง Android แอพพลิเคชัน เพื่อแสดงขอความ "Hello World" บนจอภาพ
+ - สร้าง Android แอพพลิเคชัน เพื่อแสดงข้อความ "Hello World" บนจอภาพ
 
 ***
 
@@ -44,7 +44,7 @@ java -version
 
 ![Alt text](../images/android_part1_1.png)
 
-ในกรณีที่ Terminal แสดงผมลัพท์ออกมาว่า "Command not found" แสดงว่าเครื่องคอมพิวเตอร์ของเรายังไม่ได้ทำการติดตั้ง JDK ดังนั้นต้องทำการติดตั้ง JDK ก่อนโดยสารมารถเข้าไป download ได้ตามลิงค์ต่อไปนี้ : [download the JDK] จาก Page ของ Oracle 
+ในกรณีที่ Terminal แสดงผลลัพท์ออกมาว่า "Command not found" แสดงว่าเครื่องคอมพิวเตอร์ของเรายังไม่ได้ทำการติดตั้ง JDK ดังนั้นต้องทำการติดตั้ง JDK ก่อนโดยสามารถเข้าไป download ได้ตามลิงค์ต่อไปนี้ : [download the JDK] จาก Page ของ Oracle 
 
 หลังจากติดตั้ง JDK เป็นที่เรียบร้อยเราจะไปยัง Page : [Android Studio Page] เพื่อทำการ Download Android Studio ที่มีเวอร์ชั่นและ System ที่ตรงกับเครื่องคอมพิวเตอร์ของแต่ละคน
 
@@ -72,7 +72,7 @@ Creating Hello Android
 
 ![Alt text](../images/android_part1_5.jpg)
 
-###### Note * ในกรณีที่มีการเปิด Android Studio ไว้อยู่ก่อนแล้วหรือ Welcome Screen ไม่ปรากฎ ให้ไปทีเมนูบาร์เลือก File/New Project เพื่อสร้าง Project
+###### Note * ในกรณีที่มีการเปิด Android Studio ไว้อยู่ก่อนแล้วหรือ Welcome Screen ไม่ปรากฎ ให้ไปที่เมนูบาร์เลือก File/New Project เพื่อสร้าง Project
 
 หลังจากที่เราได้ทำการเลือกเมนูในการสร้าง Project ใหม่จะมีหน้าต่าง New Project แสดงขึ้นมา ดังรูปต่อไปนี้
 
@@ -81,11 +81,11 @@ Creating Hello Android
 จากรูปข้างต้นสามารถอธิบายได้ดังต่อไปนี้
 
 1. ช่อง Application name หมายถึงช่องสำหรับตั้งชื่อแอพพลิเคชัน
-2. ช่อง Company Domain หมายถึง URL หรือ โดเมนเนมขององกร์ของผู้พัฒนา ตัวโดมเมนเนมตัวนี้จะถูกใช้เป็นเสมือนกับ Identifier ของแต่ละแอพพลิเคชัน
-3. ช่อง Package name หมายถึง Indertifer ของแอพพลิเคชัน Package จะสังเกตุได้ว่าจะเกิดมาจาก Company Domain ดังที่กล่าวถึงไปก่อนหน้านี้
-4. ช่อง Project location เป็นช่องสำหรับให้ผู้หัฒนาได้เลือกตำแหน่งที่จะทำการจัดเก็บข้อมูลหรือไฟล์ต่างๆ บน Hard Drive ของเครื่อง
+2. ช่อง Company Domain หมายถึง URL หรือ โดเมนเนมขององค์กรของผู้พัฒนา ตัวโดเมนเนมตัวนี้จะถูกใช้เป็นเสมือนกับ Identifier ของแต่ละแอพพลิเคชัน
+3. ช่อง Package name หมายถึง Identifer ของแอพพลิเคชัน Package จะสังเกตุได้ว่าจะเกิดมาจาก Company Domain ดังที่กล่าวถึงไปก่อนหน้านี้
+4. ช่อง Project location เป็นช่องสำหรับให้ผู้พัฒนาได้เลือกตำแหน่งที่จะทำการจัดเก็บข้อมูลหรือไฟล์ต่างๆ บน Hard Drive ของเครื่อง
 
-เมื่อเราได้ทำการตั้ค่าต่างๆ ภายในหน้าต่างนี้เป็นที่เรียบร้อยแล้ว เราก็จะพบกับอีกหนึ่งหน้าต่าง ดังรูปต่อไปนี้
+เมื่อเราได้ทำการตั้งค่าต่างๆ ภายในหน้าต่างนี้เป็นที่เรียบร้อยแล้ว เราก็จะพบกับอีกหนึ่งหน้าต่าง ดังรูปต่อไปนี้
 
 ![Alt text](../images/android_part1_7.jpg)
 
@@ -93,7 +93,7 @@ Creating Hello Android
 
 1. ช่อง Minimum SDK หมายถึง Android API version ที่ต่ำที่สุดที่แอพพลิเคชันที่กำลังจะพัฒนาสามารถ Run ได้ ซึ่งในตัว Part แรกนี้เราจะทำการเลือกที่ "API 15: Android 4.0.3 (IceCreamSandwich)" 
 
-###### Note * การตั้งค่า Minimum SDK ขึ้นอยู่กับ Requirement หรือ Device ที่ต้องการจะให้แอพพลิเคชัน Support สำหรับข้อมูลเพิ่มเติมเกี่ยวกับ API version และสถิติอื่นๆ สามารถเข้าได้จาก link นี้ [Anddroid Dashboard] 
+###### Note * การตั้งค่า Minimum SDK ขึ้นอยู่กับ Requirement หรือ Device ที่ต้องการจะให้แอพพลิเคชัน Support สำหรับข้อมูลเพิ่มเติมเกี่ยวกับ API version และสถิติอื่นๆ สามารถเข้าได้จาก link นี้ [Android Dashboard] 
 
 คลิก Next แล้วเราจะพบกับอีกหนึ่งหน้าต่างสำหรับการตั้งค่าของ Project ดังรูปต่อไปนี้
 
@@ -103,7 +103,7 @@ Creating Hello Android
 
 * Blank Activity
 * Blank Activity with Fragment
-* Fullscreeb Activity
+* Fullscreen Activity
 * Google Map Activity
 * Google Play Services Activity
 * Login Activity
@@ -118,10 +118,10 @@ Creating Hello Android
 
 จากภาพสามารถอธิบายได้ดังนี้
 
-1. Activity Name โดยทั่วไปแล้วในการพัฒนา Android แอพพลิเคชันจะมอกคำว่า "Activity" เสมือนเป็นหน้าต่างในแอพพลิเคชันของเรา ซึ่งเป็นได้ทั้งหมดของจอภาพหรือเป็นแค่ส่วนใดส่วนของจอภาพก็ได้
+1. Activity Name โดยทั่วไปแล้วในการพัฒนา Android แอพพลิเคชันจะมองคำว่า "Activity" เสมือนเป็นหน้าต่างในแอพพลิเคชันของเรา ซึ่งเป็นได้ทั้งหมดของจอภาพหรือเป็นแค่ส่วนใดส่วนของจอภาพก็ได้
 2. Layout Name เป็นช่องสำหรับตั้งชื่อไฟล์ Layout ของ Activity นั้นๆ โดยที่ไฟล์ Layout จะถูกจัดเก็บในรูปแบบของ Android XML
 
-เมื่อเราได้ทำการตั้งค่าเริ่มต้นต่างๆ เป็นที่เรียบร้อยแล้ว ถึงเวลาที่เราจะเริ่ม Project โดยการคลิกที่ปุ่ม "Finish" ตัว Android Studio จะทำการสร้างไฟล์ต่างๆและตั้งค่าตามที่เราได้ทำการเลือกไว้ โดยในกระบวนการนี้จะใช่เวลารระยะหนึ่งในการสร้าง Project ขึ้นมาโดยสัง้เกตุได้จากรูปดังต่อไปนี้
+เมื่อเราได้ทำการตั้งค่าเริ่มต้นต่างๆ เป็นที่เรียบร้อยแล้ว ถึงเวลาที่เราจะเริ่ม Project โดยการคลิกที่ปุ่ม "Finish" ตัว Android Studio จะทำการสร้างไฟล์ต่างๆและตั้งค่าตามที่เราได้ทำการเลือกไว้ โดยในกระบวนการนี้จะใช่เวลาระยะหนึ่งในการสร้าง Project ขึ้นมาโดยสังเกตุได้จากรูปดังต่อไปนี้
 
 ![Alt text](../images/android_part1_10.jpg) 
 
@@ -140,7 +140,7 @@ Running on an Emulator or Device
 
 ![Alt text](../images/android_part1_12.jpg)
 
-จากรูปข้างต้น เราจะไป Focus ที่ **Target Device** sction โดยส่วนนี้ทำหน้าเป็นตัวคอยบอก Android S3tudio ให้รู้ว่าทุกครั้งที่แอพพลิเคชันของเรา Run จะไปแสดงผลที่ไหน Emulator / Device หลังจากนี้เราจะได้เริ่มทำการตั้งค่าให้กับ Emulator ของเราโดยเลือกไปที่ Option: Emulator แล้วไปคลิกที่ปุ่มถัดจาก "Prefer Android Virtual Device" drop-down หลังจากนั้นจะปรากฎหน้าต่างของ Android Virtual Device (AVD Manager ขึ้นมาดังรูปตามลำดับต่อไปนี้
+จากรูปข้างต้น เราจะไป Focus ที่ **Target Device** section โดยส่วนนี้ทำหน้าเป็นตัวคอยบอก Android Studio ให้รู้ว่าทุกครั้งที่แอพพลิเคชันของเรา Run จะไปแสดงผลที่ไหน Emulator / Device หลังจากนี้เราจะได้เริ่มทำการตั้งค่าให้กับ Emulator ของเราโดยเลือกไปที่ Option: Emulator แล้วไปคลิกที่ปุ่มถัดจาก "Prefer Android Virtual Device" drop-down หลังจากนั้นจะปรากฎหน้าต่างของ Android Virtual Device (AVD Manager) ขึ้นมาดังรูปตามลำดับต่อไปนี้
 
 ![Alt text](../images/android_part1_13.jpg)
 ![Alt text](../images/android_part1_14.jpg)
@@ -156,15 +156,15 @@ Running on an Emulator or Device
 
 ![Alt text](../images/android_part1_17.jpg)
 
-หลังจากการ Setup เสร็จสอ้น Emulator ที่เราก็จะปรกฎใน List ของ AVD Manager ดังรูปต่อไปนี้
+หลังจากการ Setup เสร็จสิ้น Emulator ที่เราก็จะปรากฎใน List ของ AVD Manager ดังรูปต่อไปนี้
 
 ![Alt text](../images/android_part1_18.jpg)
 
-เมื่อเราได้เตรียมและสร้าง Emulator สำหรับแอพพลิเคชันเป็นที่เรียบร้อยแล้ว ให้เราเปิด AVD Manager แล้วกลับมาที่หน้าต่างของ **Edit Configurations** เพื่อไปทำการเลือก Emulator ที่ได้สร้างไว ดังรูปต่อไปนี้
+เมื่อเราได้เตรียมและสร้าง Emulator สำหรับแอพพลิเคชันเป็นที่เรียบร้อยแล้ว ให้เราเปิด AVD Manager แล้วกลับมาที่หน้าต่างของ **Edit Configurations** เพื่อไปทำการเลือก Emulator ที่ได้สร้างไว้ ดังรูปต่อไปนี้
 
 ![Alt text](../images/android_part1_19.jpg)
 
-หลังจากนั้นเราก็จะถูกนำกลับมาที่หน้าต่างของ Android Studio อีกครั้ง ถึงเวลามาเทสแอพพลิเคชันของ โดยคลิกที่ปุ่ม Run ที่มีลักษณะคล้ายกับปุ่ม Play ดังรูปต่อไปนี้
+หลังจากนั้นเราก็จะถูกนำกลับมาที่หน้าต่างของ Android Studio อีกครั้ง ถึงเวลามาเทสแอพพลิเคชันของ โดยคลิกที่ปุ่ม Run ที่มีลักษณะคล้ายกับปุ่ม Play ดังรูปต่อไปนี้
 
 ![Alt text](../images/android_part1_20.jpg)
 
@@ -178,7 +178,7 @@ Running on an Emulator or Device
 
 Putting your name on the app
 --------------
-ถึงเวลาที่เราจะนำเอาชื่อของเราไปปแสดงผลยังแอพพลิเคชัน โดยเริ่มจากไปที่ **Project Navigation Panel** เลือกไปที่ไฟล์ **strings.xml** ภายใต้ Path : **src/main/res/values/strings.xml** ดังรูปต่อไปนี้
+ถึงเวลาที่เราจะนำเอาชื่อของเราไปแสดงผลยังแอพพลิเคชัน โดยเริ่มจากไปที่ **Project Navigation Panel** เลือกไปที่ไฟล์ **strings.xml** ภายใต้ Path : **src/main/res/values/strings.xml** ดังรูปต่อไปนี้
 
 ![Alt text](../images/android_part1_22.jpg)
 
@@ -199,5 +199,5 @@ Putting your name on the app
 
 [download the JDK]:http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [Android Studio Page]:https://developer.android.com/sdk/installing/studio.html
-[Anddroid Dashboard]:https://developer.android.com/about/dashboards/index.html
+[Android Dashboard]:https://developer.android.com/about/dashboards/index.html
 
